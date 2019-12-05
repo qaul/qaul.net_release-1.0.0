@@ -28,6 +28,12 @@ For Arch Linux, run the following commands.
 	pacaur -S webkitgtk
 	
 
+For Fedora(Redhat distros) Linux, run the following commands.
+	
+	sudo dnf groupinstall "Development Tools" "Development Libraries" \
+	autoconf automake git cmake pkg-config gtk3 dbus bison flex dbus alsa-lib-devel
+
+
 Download and Build
 ------------------
 
