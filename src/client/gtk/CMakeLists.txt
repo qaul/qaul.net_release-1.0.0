@@ -1,6 +1,6 @@
 
 
-pkg_search_module (WEBKIT REQUIRED webkitgtk-3.0 webkit-1.0)
+pkg_search_module (WEBKIT REQUIRED webkit2gtk-4.0 webkitgtk-3.0 webkit-1.0)
 
 if (Raspberry)
 	add_definitions(-DQAUL_STOP_NETWORKING)

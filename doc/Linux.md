@@ -8,6 +8,7 @@ Linux distro. It has been tested on the following distributions:
 * Ubuntu
 * Linux Mint
 * Arch Linux
+* Manjaro
 
 
 
@@ -16,17 +17,21 @@ Prerequesites
 
 Install needed software to download and build qaul.net from Source.
 
+For Debian based linux distributions, run the following commands:
+
 	sudo apt-get install git cmake build-essential pkg-config \
-	libgtk-3-dev  libwebkitgtk-3.0-dev libdbus-1-dev autotools-dev \
+	libgtk-3-dev  libwebkit2gtk-4.0-dev libdbus-1-dev autotools-dev \
 	libasound2-dev bison flex automake
 
-For Arch Linux, run the following commands.
+For Arch Linux, run the following commands:
 	
-	sudo pacman -S autoconf automake git cmake pkg-config
-	gtk3 dbus bison flex dbus
-	
-	pacaur -S webkitgtk
-	
+	sudo pacman -S autoconf automake git cmake pkg-config \
+	gtk3 dbus bison flex dbus webkit2gtk
+
+For Manjaro, run the following commands:
+
+	pamac autoconf automake git cmake pkg-config \
+	gtk3 dbus bison flex dbus webkit2gtk
 
 For Fedora(Redhat distros) Linux, run the following commands.
 	
@@ -38,7 +43,7 @@ Download and Build
 ------------------
 
 	# Download the source from https://github.com/qaul/qaul.net, checkout 
-    # branch release-1.0.0, download and init submodules
+	# branch release-1.0.0, download and init submodules
 	git clone --recursive --branch release-1.0.0 https://github.com/qaul/qaul.net.git
 	
 	# create build directory

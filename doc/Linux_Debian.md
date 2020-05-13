@@ -15,7 +15,7 @@ Prerequesites
 Install needed Software to download and build qaul.net from Source.
 
 	sudo apt-get install git cmake build-essential pkg-config \
-	libgtk-3-dev  libwebkitgtk-3.0-dev libdbus-1-dev autotools-dev \
+	libgtk-3-dev  libwebkit2gtk-4.0-dev libdbus-1-dev autotools-dev \
 	libasound2-dev bison flex automake
 
 
